@@ -1,4 +1,5 @@
 import React from 'react'
+import NavbarLink from './NavbarLink'
 
 export default function Navbar() {
   return (
@@ -9,15 +10,9 @@ export default function Navbar() {
         </div>
         
         <div className='flex flex-row text-xl gap-x-12 mr-12 justify-center'>
-            <div>
-                About
-            </div>
-            <div>
-                Blog
-            </div>
-            <div>
-                Resume
-            </div>
+            <NavbarLink text={"Home"} link={"/"} />
+            <NavbarLink text={"Blog"} link={"/blog"} />
+            <NavbarLink text={"Resume"} link={"/resume"} />
         </div>
     </div>
   )
